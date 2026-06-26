@@ -7,17 +7,17 @@ const Header = () => {
   return (
     <div
       className="w-full md:w-[35%] h-[30%] md:min-w-75 md:h-screen aspect-2/1 min-h-57.5 max-h-60 md:min-h-screen
-    bg-[url(src/assets/images/bg-main-mobile.png)] md:bg-[url(src/assets/images/bg-main-desktop.png)]
+    bg-[url(src/assets/images/bg-main-mobile.png)] md:bg-[url(../assets/images/bg-main-desktop.png)]
     bg-cover bg-center bg-no-repeat relative mb-20 md:mb-0 md:mr-[calc(35%*45/100)]
   "
     >
       <div
         className="w-75 md:w-[90%] md:min-w-90 aspect-[2/1.125] md:max-w-100
-      bg-[url(src/assets/images/bg-card-front.png)] bg-cover bg-center bg-no-repeat rounded-md
+      bg-[url(../assets/images/bg-card-front.png)] bg-cover bg-center bg-no-repeat rounded-md
       absolute bottom-[-20%] left-[5%] md:bottom-auto md:top-[22.5%] md:left-auto md:right-[-25%] z-10
       p-6 flex flex-col justify-between shadow-2xl"
       >
-        <img src="src/assets/images/card-logo.svg" className="w-[25%] mb-5" />
+        <img src="../assets/images/card-logo.svg" className="w-[25%] mb-5" />
         <h2 className="text-white text-sm md:text-xl font-medium tracking-[5px] max-w-full">
           <span>{cardNum.slice(0, 4)}</span> <span>{cardNum.slice(4, 8)}</span>{" "}
           <span>{cardNum.slice(8, 12)}</span>{" "}
@@ -35,7 +35,7 @@ const Header = () => {
       </div>
       <div
         className="w-75 md:w-[90%] md:min-w-90 aspect-[2/1.125] md:max-w-100
-      bg-[url(src/assets/images/bg-card-back.png)] bg-cover bg-center bg-no-repeat rounded-md
+      bg-[url(../assets/images/bg-card-back.png)] bg-cover bg-center bg-no-repeat rounded-md
       absolute top-[5%] right-[5%] md:top-auto md:bottom-[22.5%] md:right-[-45%] shadow-2xl 
       "
       >
