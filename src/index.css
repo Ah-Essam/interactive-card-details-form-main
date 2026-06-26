@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Space Grotesk";
+}
+.inp-container {
+  position: relative;
+}
+.inp-container span {
+  background: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+  display: none;
+}
+
+.inp-container:has(input:focus) span {
+  display: inline-block;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
